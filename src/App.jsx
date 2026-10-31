@@ -24,7 +24,7 @@ import {
 function whatsappUrl() {
   const number = WHATSAPP_NUMBER.replace(/\D/g, "");
   const message = encodeURIComponent(WHATSAPP_MESSAGE);
-  return `https://wa.me/${923070688226}?text=${message}`;
+  return `https://wa.me/${923418227782}?text=${message}`;
 }
 
 function WhatsAppButton({ className = "" }) {
@@ -54,7 +54,7 @@ export default function App() {
 
   return (
     <main>
-      <header className="site-header">
+      {/* <header className="site-header">
         <a className="brand" href="#home" aria-label={`${BUSINESS_NAME} home`} onClick={closeMenu}>
           <span className="brand-mark">B</span>
           <span>{BUSINESS_NAME}</span>
@@ -72,7 +72,7 @@ export default function App() {
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
         <WhatsAppButton className="header-cta" />
-      </header>
+      </header> */}
 
       <section className="hero" id="home">
         <div className="hero-copy">
@@ -84,11 +84,11 @@ export default function App() {
             We're just one WhatsApp message away.
           </p>
           <WhatsAppButton className="hero-cta" />
-          <div className="hero-notes">
+          {/* <div className="hero-notes">
             <span><LockKeyhole size={17} /> Direct contact</span>
             <span><BadgeCheck size={17} /> Easy communication</span>
             <span><Zap size={17} /> Quick response</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="visual-wrap" aria-label="WhatsApp contact illustration">
@@ -114,7 +114,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="features-section" id="services">
+      {/* <section className="features-section" id="services">
         <div className="section-heading">
           <span className="section-tag">WHY CONNECT WITH US?</span>
           <h2>Your questions. <span>Our attention.</span></h2>
@@ -128,23 +128,23 @@ export default function App() {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <section className="about-section" id="about">
+      {/* <section className="about-section" id="about">
         <div>
           <span className="section-tag">HERE FOR YOU</span>
           <h2>Let's make it <span>easy.</span></h2>
           <p>Skip the complicated forms. Tell us what you need and we'll take it from there.</p>
         </div>
         <WhatsAppButton />
-      </section>
+      </section> */}
 
-      <footer id="contact">
+      {/* <footer id="contact">
         <a className="brand footer-brand" href="#home"><span className="brand-mark">B</span>{BUSINESS_NAME}</a>
         <p>Have something in mind? We'd love to hear from you.</p>
         <WhatsAppButton className="footer-cta" />
         <small>© {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.</small>
-      </footer>
+      </footer> */}
 
       {invalidNumber && (
         <div className="setup-warning" role="alert">
